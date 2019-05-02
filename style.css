@@ -1,0 +1,200 @@
+/*General CSS*/
+body
+	{
+		background-color: white;
+		padding: 0px;
+		margin: 1px;
+		font-size: 16px;
+		font-family: Arial, Calibri;
+	}
+h1	
+	{
+		padding: 16px;
+		text-align: center;
+		font-family: Times New Roman, Arial;
+		background: linear-gradient(to bottom, rgba(16, 141, 199, 0.2), rgba(239, 142, 56, 0.1)), url(bg3.jpg);
+		margin: 0px;
+	}
+nav 
+	{
+		background: linear-gradient(to top, rgba(35, 7, 77, 0.2), rgba(204, 83, 51, 0.1));
+		margin-top: -16px;
+		margin-bottom: -16px;
+	}
+nav #nav-list
+	{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+	}
+nav ul li 
+	{
+		padding: 16px;
+		text-align: center;
+		border: 1px solid black;
+		transition: background-color 0.3s, padding 0.8s linear;
+		font-family: 'Wendy One' , Times New Roman;
+	}
+nav ul li:hover
+	{
+		background-color: red;
+	}	
+a
+	{
+		text-decoration: none;
+		color: black;
+	}	
+#main 
+	{
+		background: linear-gradient(to bottom, rgba(35, 7, 77, 0.2), rgba(204, 83, 51)), url(bg2.jpg);
+		min-height: 500px;
+		margin-top: : 0px;
+		background-size: cover;
+		padding-top: 200px; 
+		text-align: center;
+		display: flex;
+		flex-direction:  column;
+		justify-content: top;
+		align-items: center;
+		color: white;
+		margin-bottom: 10px;
+	}
+#main h1
+	{
+		margin:0px;
+		text-align: center;
+		font-size: 2.5rem;
+	}
+#main p
+	{
+		width: 100%;
+	}
+#main2
+	{
+		background: linear-gradient(to bottom, rgba(35, 7, 77, 0.2), rgba(204, 83, 51)), url(bg2.jpg);
+		min-height: 100px;
+		margin-top: : 0px;
+		background-size: cover;
+		padding-top: 200px; 
+		text-align: center;
+		display: flex;
+		flex-direction:  column;
+		justify-content: top;
+		align-items: center;
+		color: white;
+		margin-bottom: 10px;	
+	}
+#testimonials
+	{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+.customer
+	{
+		border: 2px solid black;
+		border-radius: 100px;
+		margin-right: 20px;
+		box-shadow: 5px 10px 8px;
+		margin: 15px;
+		transition: transform 0.3s;
+	}
+.customer:hover
+	{
+		box-shadow: 0px 0px 25px;
+	}
+#showcase
+	{
+		display: flex;
+		align-content: stretch;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: space-between;
+	}
+.cards
+	{
+		border: 2px solid red;
+		max-width: 275px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: 10px;
+		box-shadow: 0px 0px, 15px;	
+	}
+.cards:hover a
+	{
+		box-shadow: 0px 0px 25px;
+	}
+.cards .card-img
+	{
+		height: 200px;
+		width: 200px;
+		padding: 10px;
+	}
+.cards .card-img img
+	{
+		height: 100%;
+		width: 250px;
+		min-width: 250px;
+		max-width: 250px;
+	}
+.cardtitle
+	{
+		margin:0px;
+		text-align: center;
+		font-size: 2rem;
+	}
+.cards .button
+	{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+	}
+.cards .button
+	{
+		padding: 5px;
+		color: black;
+		background-color: gray
+	}
+.button:hover
+	{
+		box-shadow: 0px 0px 25px;
+	}
+.cards:hover
+	{
+			background-color: skyblue;
+	}		
+footer
+	{
+		background-color: pink;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+footer a
+	{
+		padding: 20px;
+	}
+#media-icons ul
+	{
+		display: flex;
+		list-style-type: none;
+		padding: 20px;
+	}
+/*For responsive web design*/
+@media screen and (min-width: 700px)
+	{
+		nav ul
+			{
+				text-align: left;
+			}
+		nav ul li
+			{
+				display: inline-block;
+				border: 0px;
+				text-align:left;
+			}
+	}
